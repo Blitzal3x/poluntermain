@@ -5,6 +5,26 @@
     <title>Polizei Untermain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+.einsatz-tabelle {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.einsatz-tabelle th {
+    background-color: #005aa7; /* Polizei-Blau */
+    color: white;
+    padding: 10px;
+}
+
+.einsatz-tabelle td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.einsatz-tabelle tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -145,12 +165,30 @@
 <main>
     <h2>Einsatzberichte</h2>
     <p>Hier dokumentiert die Polizei Untermain besondere Einsätze, Operationen und Ereignisse.</p>
-
+<table class="einsatz-tabelle">
+<thead>
+    <tr>
+        <th>Zeitpunkt</th>
+        <th>Ort</th>
+        <th>Straße</th>
+        <th>Beschreibung</th>
+        <th>Einsatzstichwort</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>18:42:10, 29.03.2026</td>
+        <td>Untermain</td>
+        <td>Hauptstraße</td>
+        <td>Heute Nacht kam es zu einem Einbruch in ein Juweliergeschäft. Die Täter konnten unerkannt entkommen, die Ermittlungen laufen.</td>
+        <td>Einbruch</td>
+    </tr>
+</tbody>
+</table>
 </main>
 
 <footer>
     &copy; 2026 Polizei Untermain
 </footer>
-
 </body>
 </html>
